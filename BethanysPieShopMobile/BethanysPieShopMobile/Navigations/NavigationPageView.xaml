@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShopMobile.Navigations.NavigationPageView">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="yellow">#ffee05</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btnBasket" TextColor="{StaticResource yellow}" Text="Basket" Clicked="btnBasket_Clicked" ImageSource="basket.png"/>
+            <Button x:Name="btnContactUs" Text="Contact us" Clicked="btnContactUs_Clicked" ImageSource="contact.png" />
+            <Button x:Name="btnHomePage" Text="HomePage" Clicked="btnHomePage_Clicked" ImageSource="home.png"/>
+            <Button x:Name="btnPieOverview" Text="Pie's" Clicked="btnPieOverview_Clicked" ImageSource="pie.png" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
