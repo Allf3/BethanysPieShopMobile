@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShopMobile.Project.WebPageView"
+             BackgroundImageSource="patternwide.png">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="Title" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Visit Our Website"/>
+            <WebView HeightRequest="500" WidthRequest="500" Source="https://www.eucsyd.dk/" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
