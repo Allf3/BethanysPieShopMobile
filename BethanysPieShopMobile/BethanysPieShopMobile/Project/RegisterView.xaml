@@ -24,13 +24,13 @@
             <Label Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" Grid.ColumnSpan="3" FontSize="26">Register Now!</Label>
 
             <Label FontSize="18" Grid.Row="2" VerticalOptions="Center">User name</Label>
-            <Entry Grid.Row="2" x:Name="UserNameEntry"  Grid.Column="1" Grid.ColumnSpan="2" Placeholder="Enter your user name"/>
+            <Entry Grid.Row="2" x:Name="UserNameEntry" Completed="UserNameEntry_Completed"  Grid.Column="1" Grid.ColumnSpan="2" Placeholder="Enter your user name"/>
 
             <Label FontSize="18" Grid.Row="3"  VerticalOptions="Center">Password</Label>
-            <Entry Grid.Row="3" x:Name="Password"  Grid.Column="1" IsPassword="True" Grid.ColumnSpan="2" Placeholder="Enter your password" />
+            <Entry Grid.Row="3" x:Name="Password" Completed="Password_Completed"  Grid.Column="1" IsPassword="True" Grid.ColumnSpan="2" Placeholder="Enter your password" />
 
             <Label FontSize="18" Grid.Row="4"  VerticalOptions="Center">Birthday</Label>
-            <DatePicker Grid.Row="4" x:Name="BirthDayDatePicker" Grid.Column="1" Grid.ColumnSpan="2"/>
+            <DatePicker Grid.Row="4" x:Name="BirthDayDatePicker" DateSelected="BirthDayDatePicker_DateSelected" Grid.Column="1" Grid.ColumnSpan="2"/>
 
             <Label LineBreakMode="WordWrap"  FontSize="16" Grid.Row="5" HorizontalOptions="End" VerticalOptions="Start">Prefeered delivery time</Label>
             <TimePicker Grid.Row="5" x:Name="DeliveryTimePicker" Grid.Column="1" Grid.ColumnSpan="2" Time="00:00:00"/>
