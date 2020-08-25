@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using BethanysPieShopMobile.Navigations;
+using BethanysPieShopMobile.Project;
 
 namespace BethanysPieShopMobile
 {
@@ -16,7 +17,9 @@ namespace BethanysPieShopMobile
             //MainPage = new MasterDetailPageView();
             //MainPage = new CarouselPageView();
             //MainPage = new ModalPageView();
-            MainPage = new PopupView();
+            //MainPage = new LoginWithStackLayout();
+            //MainPage = new LoginView();
+            MainPage = new RegisterView();
         }
 
         protected override void OnStart()
