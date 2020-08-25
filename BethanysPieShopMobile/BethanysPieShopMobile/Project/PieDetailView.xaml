@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BethanysPieShopMobile.Project.PieDetailView"
+             BackgroundImageSource="patternwide.png">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="6*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="PieNameLabel" FontSize="Title" Grid.ColumnSpan="2" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Image x:Name="PieImage" Grid.Row="1" Grid.ColumnSpan="2"  Aspect="AspectFit"/>
+            <Label x:Name="PriceLabel" Margin="5" FontAttributes="Bold" Grid.Row="2"  HorizontalTextAlignment="Start"/>
+            <Label x:Name="InStockLabel" Margin="5" FontAttributes="Bold" Grid.Row="2" Grid.Column="1"  HorizontalTextAlignment="End"/>
+            <Label x:Name="DescriptionLabel" Margin="5" LineBreakMode="WordWrap" Grid.Row="3" Grid.ColumnSpan="2"/>
+            <Button x:Name="AddToBasketButton" BackgroundColor="#22cfa7" TextColor="WhiteSmoke" Clicked="AddToBasketButton_Clicked" Text="ADD TO BASKET" Grid.Row="4" Grid.ColumnSpan="2"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
