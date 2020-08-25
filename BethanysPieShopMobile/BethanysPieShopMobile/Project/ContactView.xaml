@@ -1,12 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BethanysPieShopMobile.Project.ContactView">
+             x:Class="BethanysPieShopMobile.Project.ContactView"
+             BackgroundImageSource="patternwide.png">
     <ContentPage.Content>
         <StackLayout>
-            <Image Source="bethanylogo.png" />
-            <Label FontSize="Title" Text="Send us a message"/>
-            <Editor />
+            <Image Source="bethanylogo.png" VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="120" Margin="15" />
+            <Label FontSize="Large" Text="Send us a message" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            <Editor x:Name="MessageEditor" HeightRequest="175" TextColor="Black" BackgroundColor="#32c3ef">
+                <Editor.Keyboard>
+                    <Keyboard x:FactoryMethod="Create">
+                        <x:Arguments>
+                            <KeyboardFlags>Suggestions,Spellcheck</KeyboardFlags>
+                        </x:Arguments>
+                    </Keyboard>
+                </Editor.Keyboard>
+            </Editor>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.ColumnSpan="2" Text="Should we contact you?" VerticalTextAlignment="Center"/>
+                <Switch x:Name="ContactMeSwitch" Grid.Column="1" HorizontalOptions="Start" Margin="10,0,0,0" VerticalOptions="Center" Toggled="ContactMeSwitch_Toggled" ></Switch>
+            </Grid>
+            <Button Text="Send" VerticalOptions="Start" HorizontalOptions="Start" x:Name="SendMessageButton" TextColor="WhiteSmoke" Clicked="SendMessageButton_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

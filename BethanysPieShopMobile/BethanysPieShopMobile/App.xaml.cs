@@ -19,7 +19,8 @@ namespace BethanysPieShopMobile
             //MainPage = new ModalPageView();
             //MainPage = new LoginWithStackLayout();
             //MainPage = new LoginView();
-            MainPage = new RegisterView();
+            //MainPage = new RegisterView();
+            MainPage = new ContactView();
         }
 
         protected override void OnStart()
