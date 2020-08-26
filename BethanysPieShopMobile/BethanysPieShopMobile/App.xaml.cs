@@ -24,7 +24,8 @@ namespace BethanysPieShopMobile
             //MainPage = new WebPageView();
             //MainPage = new WebPageView();
             //MainPage = new SettingsView();
-            MainPage = new PieDetailView();
+            //MainPage = new PieDetailView();
+            MainPage = new PieDetailPage2();
         }
 
         protected override void OnStart()
