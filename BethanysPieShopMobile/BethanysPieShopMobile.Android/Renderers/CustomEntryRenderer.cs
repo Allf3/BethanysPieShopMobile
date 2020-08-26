@@ -5,6 +5,7 @@ using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Content.Res;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -30,7 +31,7 @@ namespace BethanysPieShopMobile.Droid.Renderers
         {
             base.OnElementChanged(e);
 
-            Control?.SetBackgroundColor(Android.Graphics.Color.WhiteSmoke);
+            Control?.SetBackgroundColor(Android.Graphics.Color.Transparent);
         }
     }
 }
