@@ -35,13 +35,35 @@
             <!--Se linje 7 for value resourcen-->
             <Setter Property="TextColor" Value="White"></Setter>
         </Style>
-
+        
+        <!--12.3.1 Start-->
         <Style x:Key="TitleLabelStyle" TargetType="Label">
             <Setter Property="FontSize" Value="Large"></Setter>
             <Setter Property="FontAttributes" Value="Bold"></Setter>
             <Setter Property="HorizontalOptions" Value="Center"></Setter>
             <Setter Property="VerticalOptions" Value="Center"></Setter>
         </Style>
+
+        <Style x:Key="LogoImageStyle" TargetType="Image">
+            <Setter Property="HeightRequest" Value="200"></Setter>
+            <Setter Property="WidthRequest" Value="200"></Setter>
+        </Style>
+
+        <Style x:Key="SmallLogoImageStyle" TargetType="Image">
+            <Setter Property="HeightRequest" Value="100"></Setter>
+            <Setter Property="WidthRequest" Value="100"></Setter>
+            <Setter></Setter>
+        </Style>
+
+        <Style x:Key="EditorStyle" TargetType="Entry">
+            
+        </Style>
+
+        <Style x:Key="LoginEntry" TargetType="Entry">
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+        </Style>
+
+        <!--12.3.1 Slut-->
 
         <Style x:Key="RegularEntry" TargetType="Entry">
             <Setter Property="HorizontalOptions" Value="FillAndExpand"></Setter>
@@ -54,26 +76,26 @@
             <Setter Property="FontSize" Value="Small"></Setter>
         </Style>
 
-        <!-- Style inheritance -->
+        <!-- 12.3.2 -->
+
         <Style x:Key="BaseLabelStyle" TargetType="Label">
             <Setter Property="HorizontalOptions" Value="Start"></Setter>
             <Setter Property="VerticalOptions" Value="Center"></Setter>
             <Setter Property="TextColor" Value="DarkGray"></Setter>
         </Style>
 
-        <Style x:Key="SmallLabelStyle" TargetType="Label" 
-        BasedOn="{StaticResource BaseLabelStyle}">
+        <!-- 12.3.2 Start -->
+        <Style x:Key="SmallLabelStyle" TargetType="Label" BasedOn="{StaticResource BaseLabelStyle}">
             <Setter Property="FontSize" Value="Small"></Setter>
         </Style>
 
-        <Style x:Key="MediumLabelStyle" TargetType="Label" 
-        BasedOn="{StaticResource BaseLabelStyle}">
+        <Style x:Key="MediumLabelStyle" TargetType="Label" BasedOn="{StaticResource BaseLabelStyle}">
             <Setter Property="FontSize" Value="Medium"></Setter>
         </Style>
 
-        <Style x:Key="LargeLabelStyle" TargetType="Label" 
-BasedOn="{StaticResource BaseLabelStyle}">
+        <Style x:Key="LargeLabelStyle" TargetType="Label" BasedOn="{StaticResource BaseLabelStyle}">
             <Setter Property="FontSize" Value="Large"></Setter>
         </Style>
+        <!-- 12.3.2 Slut -->
     </Application.Resources>
 </Application>

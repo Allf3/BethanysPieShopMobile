@@ -31,10 +31,10 @@
             <Label Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center" Grid.ColumnSpan="3" FontSize="26" TextColor="{StaticResource Key=BethanysGreenColor}">Welcome to Bethany's Pie Shop</Label>
 
             <Label FontSize="18" Grid.Row="2" HorizontalOptions="End" VerticalOptions="Center">User name</Label>
-            <Entry Grid.Row="2" HorizontalOptions="Center" Grid.Column="1" Grid.ColumnSpan="2" Placeholder="Enter your user name"/>
+            <Entry Grid.Row="2" Style="{StaticResource LoginEntry}" Grid.Column="1" Grid.ColumnSpan="2" Placeholder="Enter your user name"/>
 
             <Label FontSize="18" Grid.Row="3" HorizontalOptions="End" VerticalOptions="Center">Password</Label>
-            <Entry Grid.Row="3" HorizontalOptions="Center" Grid.Column="1" IsPassword="True" Grid.ColumnSpan="2" Placeholder="Enter your password" />
+            <Entry Grid.Row="3" Style="{StaticResource LoginEntry}" Grid.Column="1" IsPassword="True" Grid.ColumnSpan="2" Placeholder="Enter your password" />
 
             <Button x:Name="LoginButton" Grid.Row="4" Grid.Column="1" Text="Login" Style="{StaticResource GreenButtonStyle}" Clicked="LoginButton_Clicked"></Button>
         </Grid>
