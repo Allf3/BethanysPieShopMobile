@@ -1,14 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="BethanysPieShopMobile.App">
+             x:Class="BethanysPieShopMobile.App"
+             xmlns:bethanysPieShopMobile="clr-namespace:BethanysPieShopMobile">
     <Application.Resources>
         <Color x:Key="BethanysGreenColor">#22cfa7</Color>
+        <!--12.1 opgave-->
+        
+        <!--12.2.3-->
+        <!--<Style x:Key="GreenButtonStyle" TargetType="Button">
+            <Setter Property="HorizontalOptions" Value="Center"></Setter>
+            <Setter Property="VerticalOptions" Value="Start"></Setter>
+            <Setter Property="BackgroundColor" Value="#22cfa7"></Setter>
+            <Setter Property="TextColor" Value="Red"></Setter>
+        </Style>-->
 
+        <!--12.2.8-->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <bethanysPieShopMobile:ColorDictionary/>
+                <!--Ændre noget inde i color Dictionary og se med hotreload at den opdatere farven fx-->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+        
+
+        
+        <Color x:Key="PageBackgroundColor">Transparent</Color>
+        
+        <!--12.2.4-->
         <Style x:Key="RegularButtonStyle" TargetType="Button">
             <Setter Property="HorizontalOptions" Value="Center"></Setter>
             <Setter Property="VerticalOptions" Value="Start"></Setter>
             <Setter Property="BackgroundColor" Value="{StaticResource BethanysGreenColor}"></Setter>
+            <!--Se linje 7 for value resourcen-->
             <Setter Property="TextColor" Value="White"></Setter>
         </Style>
 

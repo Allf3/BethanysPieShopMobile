@@ -5,7 +5,6 @@
              x:Class="BethanysPieShopMobile.Navigations.TabbedPageView">
   <!--Pages can be added as references or inline-->
     <helpers:HomePageView></helpers:HomePageView>
-    <helpers:PieOverviewView></helpers:PieOverviewView>
     <helpers:BasketView></helpers:BasketView>
     <helpers:ContactusView></helpers:ContactusView>
 </TabbedPage>

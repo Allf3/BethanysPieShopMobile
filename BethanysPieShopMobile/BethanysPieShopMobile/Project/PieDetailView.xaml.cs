@@ -13,7 +13,9 @@ namespace BethanysPieShopMobile.Project
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PieDetailView : ContentPage
     {
-        public PieDetailView()
+        public Pie Pie { get; set; }
+
+        public PieDetailView(Pie _pie)
         {
             InitializeComponent();
             Pie pie = new Pie
@@ -27,7 +29,7 @@ namespace BethanysPieShopMobile.Project
                 Price = 20.95
             };
 
-            BindData(pie);
+            BindData(_pie);
         }
 
         private void BindData(Pie pie)
@@ -37,6 +39,7 @@ namespace BethanysPieShopMobile.Project
             PriceLabel.Text = String.Format("${0}", pie.Price.ToString());
             InStockLabel.Text = (pie.InStock == true) ? "In stock" : "Not in stock";
             DescriptionLabel.Text = pie.Description;
+            this.BindingContext = this;
         }
 
         private async void AddToBasketButton_Clicked(object sender, EventArgs e)

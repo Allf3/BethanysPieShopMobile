@@ -26,7 +26,12 @@ namespace BethanysPieShopMobile
             //MainPage = new SettingsView();
             //MainPage = new PieDetailView();
             //MainPage = new PieDetailPage2();
-            MainPage = new MainPage();
+            //MainPage = new NavigationPage(new PieOverviewView());
+            var alreadyRegistered = false;
+            if (alreadyRegistered)
+                MainPage = new MainView();
+            else
+                MainPage = new NavigationPage(new LoginView()) { BarBackgroundColor = (Color)Application.Current.Resources["PageBackgroundColor"] };
         }
 
         protected override void OnStart()

@@ -6,7 +6,6 @@
     <ContentPage>
         <Image Source="applepie.jpg" Aspect="AspectFit"></Image>
     </ContentPage>
-    <helpers:PieOverviewView></helpers:PieOverviewView>
     <helpers:BasketView></helpers:BasketView>
     <helpers:ContactusView></helpers:ContactusView>
 </CarouselPage>

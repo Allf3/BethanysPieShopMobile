@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BethanysPieShopMobile.Navigations;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace BethanysPieShopMobile.Navigations
+namespace BethanysPieShopMobile.Navigations.NavForProject
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class MasterDetailPageView : MasterDetailPage
+    public partial class MasterPageNavigationListView : ContentPage
     {
-        public MasterDetailPageView()
+        public MasterPageNavigationListView()
         {
             InitializeComponent();
         }

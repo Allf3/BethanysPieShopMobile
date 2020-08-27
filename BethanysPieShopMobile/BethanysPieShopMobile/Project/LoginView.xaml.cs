@@ -16,5 +16,11 @@ namespace BethanysPieShopMobile.Project
         {
             InitializeComponent();
         }
+
+        private async void LoginButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.InsertPageBefore(new MainView(), this);
+            await Navigation.PopAsync();
+        }
     }
 }
